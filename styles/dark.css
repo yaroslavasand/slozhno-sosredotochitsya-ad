@@ -1,16 +1,21 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
+/* Тёмная тема при ручном выборе */
 :root.theme-dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
-}
+  color-scheme: dark;
 
-.theme-dark .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
+  --text-color: #f1b2ce;
+  --background-color: #000028;
+  --background-image: url('../images/cover-image-dark.png');
+
+  --heading-color: #db00ff;
+  --accent-color: #ff0070;
+
+  --decor-text-color: #000028;
+  --section-title-color: #ff0070;
+  --decoration-color: #ff0070;
+
+  --title-shadow-color: #ff0070;
+  --link-shadow-color: #ff0070;
+
+  --button-hover-color: #ff007066;
+  --rec-display: block;
 }
